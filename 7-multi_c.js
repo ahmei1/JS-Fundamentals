@@ -1,8 +1,9 @@
-const count = parseInt(process.argv[2]);
+const x = parseInt(process.argv[2]);
 
-let output = "";
-for (let i = 0; i < count; i++) {
-  output += "C is fun\n";
+if (isNaN(x)) {
+  console.log('Missing number of occurrences');
+} else {
+  for (let i = 0; i < x; i++) {
+    console.log('C is fun');
+  }
 }
-
-console.log(isNaN(count) ? "Missing number of occurrences" : output.trim());
